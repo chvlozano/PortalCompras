@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="#{facesContext.externalContext.requestContextPath}/resources/css/default.css" rel="stylesheet" type="text/css" />                
+        <title>Inicio</title>
+    </h:head>
+
+    <h:body>
+        <p:spacer height="60"/>
+        <table width="100%">
+            <tr>
+                <td id="top" colspan="2">                    
+                    <ui:insert name="Header">
+                        <h:outputText value="Contenido"/>
+                    </ui:insert>
+                </td>
+            </tr>
+            <tr>
+                <td id="accionesTD">
+                    <p:panel>
+                        <div class="well well-sm">
+                            <ui:insert name="panelAccionHeader"></ui:insert>
+                        </div>
+                        <ui:insert name="Acciones">Left</ui:insert>
+                    </p:panel>
+
+                </td>
+                <td id="contenidoTD">
+
+                    <p:panel>
+                        <div class="well well-sm">
+                            <ui:insert name="panelHeader"></ui:insert>
+                        </div>
+                        <ui:insert name="Contenido"></ui:insert>    
+                    </p:panel>
+
+                </td>
+            </tr>
+            <tr>
+                <td id="bottom" colspan="2">
+                    <ui:insert name="Pie">Bottom</ui:insert>
+                </td>
+            </tr>
+        </table>
+    </h:body>
+
+</html>
