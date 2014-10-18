@@ -10,6 +10,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import sv.com.svsystems.portalcompras.entities.Cia;
 //--
+//Nuevo
 
 /**
  *
